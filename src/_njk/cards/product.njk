@@ -1,0 +1,14 @@
+{% from "components/button.njk" import arrowRound %}
+
+{# ./assets/img/products/1.jpg #}
+{% macro product( imgSrc, title ) %}
+	<a href="#" class="c-product">
+		<div class="c-product__wrap">
+			<div class="c-product__img"><img src="{{ imgSrc }}" alt=""></div>
+			<div class="c-product__content">
+				<span class="c-product__title">{{ title }}</span>
+				{{ arrowRound( "c-product__arrow" ) }}
+			</div>
+		</div>
+	</a>
+{% endmacro %}

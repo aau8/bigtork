@@ -1,0 +1,21 @@
+@mixin title {
+	font-weight: 600;
+
+	& span,
+	& b,
+	& strong {
+		color: $accent;
+	}
+}
+
+.title-1 {
+	@include title;
+
+	font-size: 64px;
+}
+
+.title-2 {
+	@include title;
+
+	font-size: 48px;
+}

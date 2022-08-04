@@ -1,0 +1,12 @@
+{% from "components/button.njk" import arrowRound %}
+
+{% macro case( imgSrc, title ) %}
+	<a href="#" class="c-case" style="background-image: url('./assets/img/case/1.jpg')">
+		<div class="c-case__wrap">
+			<div class="c-case__content">
+				{{ arrowRound( "c-case__arrow" ) }}
+				<span class="c-case__title">Coal chemical industry </span>
+			</div>
+		</div>
+	</a>
+{% endmacro %}
