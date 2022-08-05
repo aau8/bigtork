@@ -1,11 +1,29 @@
 {% from "components/button.njk" import btn %}
 
-<main class="main page-main">
+<main class="main have-thumb page-main">
 	<div class="main__container">
 		<div class="main-info">
 			<div class="main__content">
-				<h1 class="title-1 main__title">Optimize <b>inspection system</b> operation one step ahead</h1>
-				<p class="main__text">Lorem ipsum dolor sit amet dolore consectetur adipiscing elit, sed do eiusmod tempor</p>
+				<h1 class="title-1 main__title">About <span>BIGTORK</span></h1>
+				<p class="main__text">
+					Bigtork has always focused on the sales, production, R&D and design of pneumatic actuators
+					for industrial process control valves, and has signed long-term ORM cooperation services
+					with foreign automatic valve companies.
+					<br><br>
+					The company's main products are fork-type actuators, rack-type actuators, linear actuators
+					and special actuators and other products. The company has a complete quality management system and complete certification qualifications, as well as advanced manufacturing
+					and processing equipment and complete product testing methods.
+					<br><br>
+					Bigtork provides the best technical services and solutions for industrial process control valves, dedicated to improving the control performance and stability of control valves.
+					<br><br>
+					• Quick response services improve operational efficiency, always one step ahead
+					of the competition.
+					<br><br>
+					• Leverage our expertise to help you quickly and correctly select products, extend control
+					valve maintenance intervals, and enhance your competitive advantage
+					<br><br>
+					• The technical team is constantly striving to find the best solution, providing technical support services according to needs at every stage of the project.
+				</p>
 				{{ btn( "main__btn", "More info" ) }}
 			</div>
 			<div class="main__digits">
@@ -19,27 +37,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="main-slider">
-			<div class="swiper-container">
-				<div class="swiper is-crop main__slider" data-swiper="main">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<div class="main__slide"><img src="./assets/img/main/1.jpg" alt=""></div>
-						</div>
-						<div class="swiper-slide">
-							<div class="main__slide"><img src="./assets/img/case/1.jpg" alt=""></div>
-						</div>
-						<div class="swiper-slide">
-							<div class="main__slide"><img src="./assets/img/case/2.jpg" alt=""></div>
-						</div>
-					</div>
-				</div>
-				{# <div class="swiper__arrows">
-					<button class="swiper-arrow s-case__arrow is-prev"></button>
-					<button class="swiper-arrow s-case__arrow is-next"></button>
-				</div> #}
-			</div>
-
+		<div class="main-thumb">
+			<div class="main-thumb__img"><img src="./assets/img/main/1.jpg" alt=""></div>
 		</div>
 	</div>
 </main>

@@ -50,7 +50,7 @@ $container-width: $max-width-container + $container-padding;
 $laptop-l: 1500px;
 $laptop: 1100px;
 $tablet: 800px;
-$mobile-l: 450px;
+$mobile-l: 500px;
 $mobile-m: 390px;
 $mobile-s: 330px;
 $hide-menu: $tablet;
@@ -148,6 +148,7 @@ body {
 @import "./cards/product";
 @import "./cards/case";
 @import "./cards/certificate";
+@import "./cards/photo";
 
 // Блоки
 @import "./blocks/digit";
@@ -165,6 +166,8 @@ body {
 @import "./sections/companyProfile";
 @import "./sections/case";
 @import "./sections/certificate";
+@import "./sections/companyDevelopment";
+@import "./sections/photoSlider";
 @import "./sections/footer";
 
 // Стили для отдельных страниц

@@ -1,7 +1,7 @@
 import Swiper, { Navigation, Pagination, EffectFade, Autoplay } from "swiper";
 
 const optFourthCards = {
-	modules: [Navigation, Pagination],
+	modules: [Navigation],
 
 	breakpoints: {
 		1200: {
@@ -47,6 +47,32 @@ const certificateSwiper = new Swiper("[data-swiper=certificate]", {
 	navigation: {
 		nextEl: ".s-cert__arrow.is-next",
 		prevEl: ".s-cert__arrow.is-prev",
+	},
+});
+
+const photoSwiper = new Swiper("[data-swiper=photo]", {
+	modules: [Navigation],
+
+	centeredSlides: true,
+	loop: true,
+
+	breakpoints: {
+		900: {
+			slidesPerView: 3,
+			spaceBetween: 24,
+		},
+		600: {
+			slidesPerView: 3,
+			spaceBetween: 16,
+		},
+		0: {
+			slidesPerView: 1,
+			spaceBetween: 16,
+		},
+	},
+	navigation: {
+		nextEl: ".s-photo__arrow.is-next",
+		prevEl: ".s-photo__arrow.is-prev",
 	},
 });
 

@@ -10,24 +10,16 @@
     <body>
 		<div class="wrapper">
 			{% include "sections/header.njk" %}
-			{% include "sections/mainWithSlider.njk" %}
+			{% include "sections/main.njk" %}
 			<div class="content">
 
-				{% include "sections/productSlider.njk" %}
-				{% include "sections/companyProfile.njk" %}
-				{% include "sections/caseSlider.njk" %}
+				{% include "sections/companyDevelopment.njk" %}
+				{% include "sections/photoSlider.njk" %}
+				{% include "sections/certificateSlider.njk" %}
+
 			</div>
 			{% include "sections/footer.njk" %}
 		</div>
-        {# {% import "parts/card.njk" as card %}
-        <div class="card__list">
-            {{ card.product( addFavorite = true ) }}
-            {{ card.product() }}
-			{{ card.product( addFavorite = false ) }}
-			{{ card.product( addFavorite = true ) }}
-        </div> #}
-
-
 
 		<script src="./assets/js/bundle.js"></script>
     </body>

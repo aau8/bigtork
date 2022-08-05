@@ -1,6 +1,7 @@
 {
     "/prod/assets/js/bundle.js": "/prod/assets/js/bundle.js",
     "/prod/assets/css/style.css": "/prod/assets/css/style.css",
+    "/prod/about.html": "/prod/about.html",
     "/prod/certificate.html": "/prod/certificate.html",
     "/prod/index.html": "/prod/index.html",
     "/prod/main.html": "/prod/main.html",

@@ -1,0 +1,13 @@
+.s-photo__slider {
+	// height: ;
+
+	@media (min-width: 601px) {
+
+		& .swiper-slide.swiper-slide-active {
+
+			& .c-photo {
+				transform: scale(1.05);
+			}
+		}
+	}
+}
