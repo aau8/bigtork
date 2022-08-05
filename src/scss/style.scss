@@ -153,6 +153,7 @@ body {
 
 // Модальные окна
 // @import "./components/modals/";
+@import "./components/breadcrumbs/";
 @import "./components/slider/";
 
 // Секции
@@ -164,4 +165,4 @@ body {
 @import "./sections/footer";
 
 // Стили для отдельных страниц
-// @import "./pages/";
+@import "./pages/products";

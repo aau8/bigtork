@@ -40,6 +40,11 @@
 	width: 100%;
 	max-height: 330px;
 	aspect-ratio: 1 / 1;
+
+	@media (max-width: $mobile-l) {
+		max-width: 200px;
+		margin: 0 auto;
+	}
 }
 
 .c-product__content {

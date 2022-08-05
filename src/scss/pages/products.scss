@@ -1,0 +1,12 @@
+.page-products {
+
+	& .content {
+
+		& > * {
+
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+}

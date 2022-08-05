@@ -1,0 +1,44 @@
+{% from "sections/breadcrumbs.njk" import breadcrumbs %}
+{% from "blocks/sectionHeader.njk" import sectionHeader %}
+{% from "cards/product.njk" import product %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Document</title>
+		<link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+		<div class="wrapper page-products">
+
+			{% include "sections/header.njk" %}
+			{{ breadcrumbs( [ 'Главная', 'Продукция' ] ) }}
+
+			<div class="content">
+				<section class="section s-product">
+					<div class="s-product__container">
+						{{ sectionHeader( "Product <b>center</b>", "Lorem ipsum dolor sit amet dolore consectetur adipiscing" ) }}
+						<div class="s-product__body">
+							<div class="s-product__list">
+								{{ product( "./assets/img/products/1.jpg", "Angle stroke rack type AT series (new type)" ) }}
+								{{ product( "./assets/img/products/2.jpg", "BG series shift fork actuator" ) }}
+								{{ product( "./assets/img/products/3.jpg", "Straight stroke piston actuator" ) }}
+								{{ product( "./assets/img/products/4.jpg", "Hydraulic <br>Actuator" ) }}
+								{{ product( "./assets/img/products/1.jpg", "Angle stroke rack type AT series (new type)" ) }}
+								{{ product( "./assets/img/products/2.jpg", "BG series shift fork actuator" ) }}
+								{{ product( "./assets/img/products/3.jpg", "Straight stroke piston actuator" ) }}
+								{{ product( "./assets/img/products/4.jpg", "Hydraulic <br>Actuator" ) }}
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			{% include "sections/footer.njk" %}
+		</div>
+
+		<script src="./assets/js/bundle.js"></script>
+    </body>
+</html>
