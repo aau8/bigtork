@@ -1,0 +1,36 @@
+{% from "blocks/sectionHeader.njk" import sectionHeader %}
+{% from "cards/certificate.njk" import certificate %}
+{# {% from "blocks/sliderForCards.njk" import sliderForCards %} #}
+
+<section class="section s-cert">
+	<div class="s-cert__container">
+		{{ sectionHeader( "Сертификаты", "Lorem ipsum dolor sit amet dolore consectetur adipiscing" ) }}
+		<div class="s-cert__body">
+			<div class="swiper-container">
+				<div class="swiper is-crop s-cert__slider" data-swiper="certificate">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							{{ certificate( './assets/img/docs/1.jpg' ) }}
+						</div>
+						<div class="swiper-slide">
+							{{ certificate( './assets/img/docs/2.jpg' ) }}
+						</div>
+						<div class="swiper-slide">
+							{{ certificate( './assets/img/docs/3.jpg' ) }}
+						</div>
+						<div class="swiper-slide">
+							{{ certificate( './assets/img/docs/4.jpg' ) }}
+						</div>
+						<div class="swiper-slide">
+							{{ certificate( './assets/img/docs/3.jpg' ) }}
+						</div>
+					</div>
+				</div>
+				<div class="swiper__arrows">
+					<button class="swiper-arrow s-cert__arrow is-prev"></button>
+					<button class="swiper-arrow s-cert__arrow is-next"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

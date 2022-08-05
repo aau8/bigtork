@@ -3,10 +3,10 @@
 		<div class="breadcrumbs__container">
 			<ul class="breadcrumbs__list">
 				{% for page in pages %}
-					{% if loop.index === 1 %}
-						<li class="breadcrumbs__item"><a class="link" href="#">{{ page }}</a></li>
-					{% else %}
+					{% if loop.index === pages | length %}
 						<li class="breadcrumbs__item">{{ page }}</li>
+					{% else %}
+						<li class="breadcrumbs__item"><a class="link" href="#">{{ page }}</a></li>
 					{% endif %}
 				{% endfor %}
 			</ul>

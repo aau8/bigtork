@@ -41,6 +41,15 @@ const productSwiper = new Swiper("[data-swiper=product]", {
 	},
 });
 
+const certificateSwiper = new Swiper("[data-swiper=certificate]", {
+	...optFourthCards,
+
+	navigation: {
+		nextEl: ".s-cert__arrow.is-next",
+		prevEl: ".s-cert__arrow.is-prev",
+	},
+});
+
 const mainSwiper = new Swiper("[data-swiper=main]", {
 	modules: [EffectFade, Navigation, Pagination, Autoplay],
 

@@ -147,6 +147,7 @@ body {
 // Карточки
 @import "./cards/product";
 @import "./cards/case";
+@import "./cards/certificate";
 
 // Блоки
 @import "./blocks/digit";
@@ -155,6 +156,7 @@ body {
 // @import "./components/modals/";
 @import "./components/breadcrumbs/";
 @import "./components/slider/";
+@import "./components/zoom-in-img/";
 
 // Секции
 @import "./sections/header";
@@ -162,6 +164,7 @@ body {
 @import "./sections/product";
 @import "./sections/companyProfile";
 @import "./sections/case";
+@import "./sections/certificate";
 @import "./sections/footer";
 
 // Стили для отдельных страниц
