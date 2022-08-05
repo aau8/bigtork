@@ -9,7 +9,8 @@
 		"prod": "npx mix -p --mix-config=./config/laravel.mix.cjs",
 		"sprite": "npx mix --mix-config=./config/sprite.mix.cjs",
 		"njk:format": "djlint --version",
-		"deploy": "npm run prod && gulp ftp",
+		"deploy": "gulp ftp",
+		"deploy:prod": "npm run prod && gulp ftp",
 		"zip": "npm run prod && gulp zip"
 	},
 	"keywords": [],

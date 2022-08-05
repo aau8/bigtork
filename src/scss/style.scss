@@ -16,7 +16,7 @@ $accent: #FFCD51;
 $light: #fff;
 
 // Задний фон разделов
-// $frame-dark: #080A0A;
+$frame-dark: #000;
 // $frame-light: #0E1010;
 
 // Обводка
@@ -38,12 +38,13 @@ $error: #EB5757;
 // ================ Responsive Start ================
 $min-width: 320px;
 $max-width: 1920px;
-$max-width-container: 1400px;
+$max-width-container: 1400;
 $container-padding: 48;
 $container-width: $max-width-container + $container-padding;
 
 :root {
 	--container-padding: #{math.div($container-padding, 2) + 'px'};
+	--container-width: #{$container-width + 'px'};
 }
 
 $laptop-l: 1500px;
@@ -76,6 +77,14 @@ body {
         overflow: hidden;
 		touch-action: none;
     }
+
+	@media (max-width: $tablet) {
+		font-size: 18px;
+	}
+
+	@media (max-width: $mobile-l) {
+		font-size: 16px;
+	}
 }
 
 .wrapper {
@@ -100,7 +109,7 @@ body {
 */
 [class*="__container"] {
     @if ($max-width-container>0) {
-        max-width: $max-width-container;
+        max-width: $max-width-container + px;
         box-sizing: content-box;
         margin: 0 auto;
     }
@@ -122,7 +131,7 @@ body {
 }
 
 // Библиотеки
-// @import "./libs/swiper";
+@import "./libs/swiper";
 // @import "./libs/lightgallery";
 // @import "./libs/rangeslider";
 
@@ -139,12 +148,19 @@ body {
 @import "./cards/product";
 @import "./cards/case";
 
+// Блоки
+@import "./blocks/digit";
+
 // Модальные окна
 // @import "./components/modals/";
+@import "./components/slider/";
 
 // Секции
 @import "./sections/header";
 @import "./sections/main";
+@import "./sections/product";
+@import "./sections/companyProfile";
+@import "./sections/case";
 @import "./sections/footer";
 
 // Стили для отдельных страниц

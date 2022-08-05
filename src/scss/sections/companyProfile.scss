@@ -1,0 +1,64 @@
+.profile {
+	position: relative;
+	color: $light;
+	background: center/cover no-repeat url('../img/company-profile.jpg');
+	padding: 144px 0;
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0.4) 40.73%, rgba(0, 0, 0, 0) 100%);
+
+		@media (max-width: $tablet) {
+			background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 40.73%, rgba(0, 0, 0, .2) 100%);
+		}
+	}
+
+	@media (max-width: $tablet) {
+		padding: 100px 0;
+	}
+
+	@media (max-width: $mobile-l) {
+		padding: 70px 0;
+	}
+}
+
+.profile__container {
+	position: relative;
+	z-index: 1;
+}
+
+.profile__body {
+
+}
+
+.profile__content {
+	max-width: 690px;
+
+	& > * {
+
+		&:not(:last-child) {
+			margin-bottom: 48px;
+
+			@media (max-width: $mobile-l) {
+				margin-bottom: 32px;
+			}
+		}
+	}
+}
+
+.profile__title {
+
+}
+
+.profile__text {
+	line-height: 1.4;
+}
+
+.profile__btn {
+	min-width: 220px;
+}

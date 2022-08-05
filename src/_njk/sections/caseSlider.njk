@@ -1,0 +1,36 @@
+{% from "blocks/sectionHeader.njk" import sectionHeader %}
+{% from "cards/case.njk" import case %}
+{# {% from "blocks/sliderForCards.njk" import sliderForCards %} #}
+
+<section class="section s-case">
+	<div class="s-case__container">
+		{{ sectionHeader( "Product <br><b>application</b> case", "Lorem ipsum dolor sit amet dolore consectetur adipiscing elit, sed do eiusmod tempor" ) }}
+		<div class="s-case__body">
+			<div class="swiper-container">
+				<div class="swiper is-crop s-case__slider" data-swiper="case">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							{{ case() }}
+						</div>
+						<div class="swiper-slide">
+							{{ case() }}
+						</div>
+						<div class="swiper-slide">
+							{{ case() }}
+						</div>
+						<div class="swiper-slide">
+							{{ case() }}
+						</div>
+						<div class="swiper-slide">
+							{{ case() }}
+						</div>
+					</div>
+				</div>
+				<div class="swiper__arrows">
+					<button class="swiper-arrow s-case__arrow is-prev"></button>
+					<button class="swiper-arrow s-case__arrow is-next"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

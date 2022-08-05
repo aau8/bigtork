@@ -1,0 +1,16 @@
+.b-digit {
+	display: flex;
+	flex-direction: column;
+}
+
+.b-digit__value {
+
+	&::after {
+		content: '+';
+		color: $accent;
+	}
+}
+
+.b-digit__text {
+	margin-top: 12px;
+}

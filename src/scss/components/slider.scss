@@ -1,0 +1,119 @@
+.swiper-container {
+	position: relative;
+}
+
+.swiper {
+	opacity: 0;
+	transition: opacity $tr;
+
+	&.swiper-initialized {
+		opacity: 1;
+	}
+
+	&.is-crop {
+		overflow: hidden;
+		padding: 10px;
+		margin: -10px;
+	}
+
+	& .swiper-wrapper {
+	}
+
+	& .swiper-wrapper > .swiper-slide {
+		margin-right: 24px;
+
+		@media (max-width: $mobile-l) {
+			margin-right: 12px;
+		}
+	}
+}
+
+// Стрелки
+.swiper__arrows {
+	position: absolute;
+	z-index: 1;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	max-width: 100vw;
+	width: 125%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 calc(var(--container-padding) + 10px + 12px);
+	pointer-events: none;
+
+	@media (max-width: $tablet) {
+		position: relative;
+		top: auto;
+		left: auto;
+		width: 100%;
+		transform: initial;
+		justify-content: center;
+		padding: 0;
+		margin-top: 24px;
+
+		& > * {
+
+			&:not(:last-child) {
+				margin-right: 16px;
+			}
+		}
+	}
+}
+
+.swiper-arrow {
+    width: 48px;
+    aspect-ratio: 1;
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    background: $light;
+    border-radius: 50%;
+    padding: 6px;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+	pointer-events: fill;
+
+	&.swiper-button-disabled {
+
+		&::before {
+			background: create-rgba(#000, .1);
+		}
+	}
+
+	&.swiper-button-lock {
+		display: none;
+	}
+
+	&::before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		mask: center/contain no-repeat url('../img/sprite.svg#arrow-triangle');
+		background: $accent;
+		transition: $tr;
+
+		@media (max-width: $container-width + px) {
+			width: 80%;
+			height: 80%;
+		}
+	}
+
+	&.is-next {
+
+		&::before {
+			transform: rotate(-90deg);
+		}
+	}
+
+	&.is-prev {
+
+		&::before {
+			transform: rotate(90deg);
+		}
+	}
+
+	@media (max-width: $mobile-m) {
+		width: 50px;
+	}
+}

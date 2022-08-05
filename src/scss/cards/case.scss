@@ -1,11 +1,10 @@
 .c-case {
-	max-width: 326px;
-
 	position: relative;
 	width: 100%;
 	min-height: 450px;
 	display: flex;
 	background: center/cover no-repeat;
+	filter: grayscale(1);
 	border-radius: $radius;
 	overflow: hidden;
 	transition: $tr;
@@ -28,6 +27,7 @@
 
 		&:hover {
 			transform: scale(1.025);
+			filter: grayscale(0);
 
 			& .c-case__arrow {
 				--bg: #{$accent};

@@ -1,0 +1,32 @@
+{% from "blocks/sectionHeader.njk" import sectionHeader %}
+{% from "cards/product.njk" import product %}
+
+<section class="section s-product">
+	<div class="s-product__container">
+		{{ sectionHeader( "Product <b>center</b>", "Lorem ipsum dolor sit amet dolore consectetur adipiscing" ) }}
+		<div class="s-product__body">
+			<div class="swiper-container">
+				<div class="swiper is-crop s-product__slider" data-swiper="product">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							{{ product( "./assets/img/products/1.jpg", "Angle stroke rack type AT series (new type)" ) }}
+						</div>
+						<div class="swiper-slide">
+							{{ product( "./assets/img/products/2.jpg", "BG series shift fork actuator" ) }}
+						</div>
+						<div class="swiper-slide">
+							{{ product( "./assets/img/products/3.jpg", "Straight stroke piston actuator" ) }}
+						</div>
+						<div class="swiper-slide">
+							{{ product( "./assets/img/products/4.jpg", "Hydraulic <br>Actuator" ) }}
+						</div>
+					</div>
+				</div>
+				<div class="swiper__arrows">
+					<button class="swiper-arrow s-product__arrow is-prev"></button>
+					<button class="swiper-arrow s-product__arrow is-next"></button>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
