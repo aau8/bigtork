@@ -30,5 +30,6 @@
     "/prod/assets/img/sprite.svg": "/prod/assets/img/sprite.svg",
     "/prod/decisions.html": "/prod/decisions.html",
     "/prod/service.html": "/prod/service.html",
-    "/prod/contacts.html": "/prod/contacts.html"
+    "/prod/contacts.html": "/prod/contacts.html",
+    "/prod/product.html": "/prod/product.html"
 }

@@ -1,4 +1,4 @@
-import Swiper, { Navigation, Pagination, EffectFade, Autoplay } from "swiper";
+import Swiper, { Navigation, Pagination, EffectFade, Autoplay, Thumbs } from "swiper";
 
 const optFourthCards = {
 	modules: [Navigation],
@@ -96,4 +96,31 @@ const mainSwiper = new Swiper("[data-swiper=main]", {
 		nextEl: ".s-product__arrow.is-next",
 		prevEl: ".s-product__arrow.is-prev",
 	},
+});
+
+const productSecondSwiper = new Swiper("[data-swiper=product-second]", {
+	modules: [EffectFade, Navigation, Pagination],
+
+	slidesPerView: 3,
+	spaceBetween: 20,
+	loop: true,
+	centeredSlides: true,
+	allowTouchMove: false,
+});
+
+const productMainSwiper = new Swiper("[data-swiper=product-main]", {
+	modules: [EffectFade, Navigation, Pagination, Thumbs],
+
+	slidesPerView: 1,
+	effect: 'fade',
+	loop: true,
+
+	navigation: {
+		nextEl: ".s-product-main__arrow.is-next",
+		prevEl: ".s-product-main__arrow.is-prev",
+	},
+
+	thumbs: {
+		swiper: productSecondSwiper,
+	}
 });

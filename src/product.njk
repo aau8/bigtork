@@ -1,0 +1,89 @@
+{% from "sections/breadcrumbs.njk" import breadcrumbs %}
+{% from "blocks/sectionHeader.njk" import sectionHeader %}
+{% from "cards/product.njk" import product %}
+{% from "components/button.njk" import btn %}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Document</title>
+		<link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+		<div class="wrapper page-products">
+
+			{% include "sections/header.njk" %}
+			{{ breadcrumbs( [ 'Главная', 'Продукция', 'Angle stroke rack type AT series (new type)' ] ) }}
+
+			<div class="content">
+				<section class="product">
+					<div class="product__container">
+						<div class="product__visual">
+							<div class="product__slider-main">
+								<div class="swiper-container">
+									<div class="swiper" data-swiper="product-main">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="./assets/img/products/1.jpg" data-zoom alt=""></div>
+											<div class="swiper-slide"><img src="./assets/img/products/2.jpg" data-zoom alt=""></div>
+											<div class="swiper-slide"><img src="./assets/img/products/3.jpg" data-zoom alt=""></div>
+											<div class="swiper-slide"><img src="./assets/img/products/4.jpg" data-zoom alt=""></div>
+										</div>
+									</div>
+									<div class="swiper__arrows">
+										<button class="swiper-arrow s-product-main__arrow is-prev"></button>
+										<button class="swiper-arrow s-product-main__arrow is-next"></button>
+									</div>
+								</div>
+							</div>
+							<div class="product__slider-second">
+								<div class="swiper-container">
+									<div class="swiper is-crop" data-swiper="product-second">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide"><img src="./assets/img/products/1.jpg" alt=""></div>
+											<div class="swiper-slide"><img src="./assets/img/products/2.jpg" alt=""></div>
+											<div class="swiper-slide"><img src="./assets/img/products/3.jpg" alt=""></div>
+											<div class="swiper-slide"><img src="./assets/img/products/4.jpg" alt=""></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product__content">
+							<h1 class="title-2 product__title">Angle stroke <span>rack type AT series</span> (new type)</h1>
+							<p class="product__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+								<br><br>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip. Ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+							</p>
+							{{ btn( 'product__btn', 'Тех. характеристики' ) }}
+						</div>
+					</div>
+				</section>
+
+				<section class="section s-product">
+					<div class="s-product__container">
+						{{ sectionHeader( "Другие <b>товары</b>", "Lorem ipsum dolor sit amet dolore consectetur adipiscing" ) }}
+						<div class="s-product__body">
+							<div class="s-product__list">
+								{{ product( "./assets/img/products/1.jpg", "Angle stroke rack type AT series (new type)" ) }}
+								{{ product( "./assets/img/products/2.jpg", "BG series shift fork actuator" ) }}
+								{{ product( "./assets/img/products/3.jpg", "Straight stroke piston actuator" ) }}
+								{{ product( "./assets/img/products/4.jpg", "Hydraulic <br>Actuator" ) }}
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+			{% include "sections/footer.njk" %}
+		</div>
+
+		<script src="./assets/js/bundle.js"></script>
+    </body>
+</html>
