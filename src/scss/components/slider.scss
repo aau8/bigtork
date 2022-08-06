@@ -71,7 +71,6 @@
     background: $light;
     border-radius: 50%;
     padding: 6px;
-	box-shadow: 0 0 10px rgba(0,0,0,.1);
 	pointer-events: fill;
 
 	&.swiper-button-disabled {
@@ -111,6 +110,10 @@
 		&::before {
 			transform: rotate(90deg);
 		}
+	}
+
+	@media (max-width: $container-width + px) {
+		box-shadow: 0 0 10px rgba(0,0,0,.1);
 	}
 
 	@media (max-width: $mobile-m) {

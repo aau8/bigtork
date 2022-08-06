@@ -1,0 +1,22 @@
+.s-manuf__body {
+
+	& > .s-manuf__block {
+
+		&:not(:last-child) {
+			margin-bottom: 56px;
+		}
+	}
+}
+
+.s-manuf__content {
+	font-size: 18px;
+	margin-top: 48px;
+
+	@media (max-width: $tablet) {
+		margin-top: 32px;
+	}
+
+	@media (max-width: $mobile-l) {
+		margin-top: 24px;
+	}
+}

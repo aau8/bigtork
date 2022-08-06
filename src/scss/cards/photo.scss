@@ -14,4 +14,8 @@
 	& img {
 		object-fit: cover;
 	}
+
+	@media (max-width: $mobile-l) {
+		aspect-ratio: 2 / 1.5;
+	}
 }

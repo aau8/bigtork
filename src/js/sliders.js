@@ -50,31 +50,37 @@ const certificateSwiper = new Swiper("[data-swiper=certificate]", {
 	},
 });
 
-const photoSwiper = new Swiper("[data-swiper=photo]", {
-	modules: [Navigation],
+const photoSwiperElems = document.querySelectorAll('[data-swiper=photo]')
 
-	centeredSlides: true,
-	loop: true,
+for (let i = 0; i < photoSwiperElems.length; i++) {
+	const photoSwiperContainer = photoSwiperElems[i].parentElement
 
-	breakpoints: {
-		900: {
-			slidesPerView: 3,
-			spaceBetween: 24,
+	const photoSwiper = new Swiper(photoSwiperElems[i], {
+		modules: [Navigation],
+
+		centeredSlides: true,
+		loop: true,
+
+		breakpoints: {
+			900: {
+				slidesPerView: 3,
+				spaceBetween: 24,
+			},
+			600: {
+				slidesPerView: 3,
+				spaceBetween: 16,
+			},
+			0: {
+				slidesPerView: 1,
+				spaceBetween: 16,
+			},
 		},
-		600: {
-			slidesPerView: 3,
-			spaceBetween: 16,
+		navigation: {
+			nextEl: photoSwiperContainer.querySelector('.s-photo__arrow.is-next'),
+			prevEl: photoSwiperContainer.querySelector('.s-photo__arrow.is-prev'),
 		},
-		0: {
-			slidesPerView: 1,
-			spaceBetween: 16,
-		},
-	},
-	navigation: {
-		nextEl: ".s-photo__arrow.is-next",
-		prevEl: ".s-photo__arrow.is-prev",
-	},
-});
+	});
+}
 
 const mainSwiper = new Swiper("[data-swiper=main]", {
 	modules: [EffectFade, Navigation, Pagination, Autoplay],
