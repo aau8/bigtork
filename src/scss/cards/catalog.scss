@@ -1,0 +1,82 @@
+.c-catalog {
+	display: flex;
+	align-items: center;
+	background: $light;
+	border-radius: $radius;
+	box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+	padding: 26px 24px 26px 32px;
+	transition: $tr;
+
+	&:active {
+		box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1);
+
+		& .c-catalog__download::before {
+			background: $accent;
+		}
+	}
+
+	@media (any-hover: hover) {
+
+		&:hover {
+			transform: scale(1.025);
+			box-shadow: 12px 12px 40px rgba(0, 0, 0, 0.1);
+
+			& .c-catalog__download::before {
+				background: $accent;
+			}
+		}
+
+		&:active {
+			transform: scale(1);
+			box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+		}
+	}
+}
+
+.c-catalog__content {
+	display: flex;
+	align-items: center;
+	padding-right: 16px;
+}
+
+.c-catalog__icon {
+	@include strictSize(40px);
+	background: center/contain no-repeat url('../img/sprite.svg#pdf');
+}
+
+.c-catalog__info {
+	display: flex;
+	flex-direction: column;
+	margin-left: 12px;
+}
+
+.c-catalog__title {
+	font-size: 14px;
+}
+
+.c-catalog__label {
+	font-size: 12px;
+	color: $text-label;
+}
+
+.c-catalog__download {
+	position: relative;
+	width: 36px;
+	height: 100%;
+	border-left: 1px solid $text-label;
+	margin-left: auto;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 50%;
+		right: 0;
+		transform: translate(0, -50%);
+		width: 50%;
+		// width: 32%;
+		aspect-ratio: 1 / 1;
+		mask: right center/contain no-repeat url('../img/sprite.svg#download');
+		background: $text-label;
+		transition: $tr;
+	}
+}

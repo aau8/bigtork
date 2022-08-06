@@ -3,8 +3,10 @@
     "/prod/assets/css/style.css": "/prod/assets/css/style.css",
     "/prod/about.html": "/prod/about.html",
     "/prod/certificate.html": "/prod/certificate.html",
+    "/prod/documentation.html": "/prod/documentation.html",
     "/prod/index.html": "/prod/index.html",
     "/prod/main.html": "/prod/main.html",
+    "/prod/manuf.html": "/prod/manuf.html",
     "/prod/products.html": "/prod/products.html",
     "/prod/quality.html": "/prod/quality.html",
     "/prod/test.html": "/prod/test.html",
@@ -25,6 +27,5 @@
     "/prod/assets/img/products/2.jpg": "/prod/assets/img/products/2.jpg",
     "/prod/assets/img/products/3.jpg": "/prod/assets/img/products/3.jpg",
     "/prod/assets/img/products/4.jpg": "/prod/assets/img/products/4.jpg",
-    "/prod/assets/img/sprite.svg": "/prod/assets/img/sprite.svg",
-    "/prod/manuf.html": "/prod/manuf.html"
+    "/prod/assets/img/sprite.svg": "/prod/assets/img/sprite.svg"
 }
