@@ -1,0 +1,90 @@
+.s-advant {
+
+}
+
+.s-advant__container {
+
+}
+
+.s-advant__body {
+	border-radius: $radius;
+	background: $light;
+	box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+	padding: 64px 104px;
+
+	& > .c-advant {
+
+		&:nth-child(odd) {
+
+			& .c-advant__wrap {
+
+				@media (max-width: 600px) {
+					flex-direction: column;
+				}
+			}
+
+			& .c-advant__content {
+				margin-left: 140px;
+				@include resVal( margin-left, 24, 140, 800, $container-width );
+
+				@media (max-width: $tablet) {
+					margin-left: 24px;
+				}
+
+				@media (max-width: 600px) {
+					margin: 24px 0 0 0;
+				}
+			}
+		}
+
+		&:nth-child(even) {
+
+			& .c-advant__wrap {
+				flex-direction: row-reverse;
+
+				@media (max-width: 600px) {
+					flex-direction: column;
+				}
+			}
+
+			& .c-advant__content {
+				margin-right: 140px;
+				@include resVal( margin-right, 24, 140, 800, $container-width );
+
+				@media (max-width: $tablet) {
+					margin-right: 24px;
+				}
+
+				@media (max-width: 600px) {
+					margin: 24px 0 0 0;
+				}
+			}
+		}
+
+		&:not(:last-child) {
+			border-bottom: 1px solid $border-line;
+			padding-bottom: 48px;
+			margin-bottom: 48px;
+
+			@media (max-width: $mobile-l) {
+				padding-bottom: 32px;
+				margin-bottom: 32px;
+			}
+		}
+	}
+
+	@media (max-width: 1200px) {
+		padding: 64px;
+	}
+
+	@media (max-width: 1000px) {
+		padding: 48px 32px;
+	}
+
+	@media (max-width: $tablet) {
+		box-shadow: none;
+		background: none;
+		border-radius: 0;
+		padding: 0;
+	}
+}

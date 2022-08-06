@@ -1,6 +1,8 @@
 {% from "components/button.njk" import btn %}
+{% from "sections/breadcrumbs.njk" import breadcrumbs %}
 
-<main class="main have-thumb page-main">
+<main class="main have-thumb have-breadcrumbs">
+	{{ breadcrumbs( [ 'Главная', 'О компании' ] ) }}
 	<div class="main__container">
 		<div class="main-info">
 			<div class="main__content">

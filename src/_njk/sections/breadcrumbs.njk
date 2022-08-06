@@ -1,5 +1,5 @@
-{% macro breadcrumbs( pages ) %}
-	<div class="breadcrumbs">
+{% macro breadcrumbs( pages, classes='' ) %}
+	<div class="breadcrumbs {{ classes }}">
 		<div class="breadcrumbs__container">
 			<ul class="breadcrumbs__list">
 				{% for page in pages %}

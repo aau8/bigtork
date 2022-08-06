@@ -1,0 +1,45 @@
+.c-advant {
+	display: flex;
+}
+
+.c-advant__wrap {
+	display: flex;
+}
+
+.c-advant__img {
+	max-width: 335px;
+	min-width: 28%;
+	max-height: 255px;
+	width: 100%;
+	aspect-ratio: 2 / 1.5;
+	border-radius: $radius;
+	overflow: hidden;
+
+	& img {
+		object-fit: cover;
+	}
+
+	@media (max-width: 600px) {
+		max-width: none;
+	}
+}
+
+.c-advant__content {
+	margin: auto 0;
+}
+
+.c-advant__title {
+
+}
+
+.c-advant__text {
+	margin-top: 32px;
+
+	@media (max-width: $tablet) {
+		margin-top: 24px;
+	}
+
+	@media (max-width: 600px) {
+		margin-top: 16px;
+	}
+}

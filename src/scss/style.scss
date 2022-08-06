@@ -20,7 +20,7 @@ $frame-dark: #000;
 // $frame-light: #0E1010;
 
 // Обводка
-$border-line: #cecece;
+$border-line: #E5E5E5;
 
 // Радиусы
 $radius: 10px;
@@ -149,6 +149,7 @@ body {
 @import "./cards/case";
 @import "./cards/certificate";
 @import "./cards/photo";
+@import "./cards/advant";
 
 // Блоки
 @import "./blocks/digit";
@@ -168,6 +169,7 @@ body {
 @import "./sections/certificate";
 @import "./sections/companyDevelopment";
 @import "./sections/photoSlider";
+@import "./sections/advant";
 @import "./sections/footer";
 
 // Стили для отдельных страниц
