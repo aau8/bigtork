@@ -126,6 +126,36 @@
 	// max-width: 354px;
 }
 
+.main__list {
+
+}
+
+.main__list-item {
+	display: flex;
+	font-size: 18px;
+
+	&:not(:last-child) {
+		margin-bottom: 32px;
+
+		@media (max-width: $mobile-l) {
+			margin-bottom: 24px;
+		}
+	}
+
+	&::before {
+		content: '';
+		display: inline-block;
+		@include strictSize(24px);
+		border-radius: 50%;
+		background: center/8px no-repeat $accent url('data:image/svg+xml,%3Csvg width=\"8\" height=\"8\" viewBox=\"0 0 8 8\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cpath fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M7.43695 0.820044C7.36298 0.855044 7.01495 1.19664 4.93695 3.27382L2.52289 5.68697L1.57758 4.7435C1.05766 4.22461 0.607656 3.7872 0.577578 3.77148C0.500546 3.73125 0.309984 3.73132 0.228828 3.77164C0.144312 3.81361 0.0784839 3.88467 0.0339058 3.98204C-0.0126254 4.08367 -0.00815669 4.20467 0.0461402 4.31343C0.0948121 4.41095 2.24456 6.5607 2.34208 6.60937C2.38012 6.62836 2.45134 6.64754 2.50036 6.65198C2.5745 6.6587 2.60487 6.65306 2.68117 6.61839C2.76428 6.58062 3.01437 6.33523 5.3465 4.00311C7.67862 1.67098 7.92401 1.42089 7.96178 1.33778C7.99648 1.2614 8.00209 1.23114 7.99536 1.15673C7.97653 0.949184 7.82481 0.800465 7.61709 0.78595C7.5393 0.780512 7.50792 0.78645 7.43695 0.820044Z\" fill=\"white\"/%3E%3C/svg%3E');
+		margin-right: 24px;
+
+		@media (max-width: $mobile-l) {
+			margin-right: 12px;
+		}
+	}
+}
+
 .main__btn {
 	min-width: 216px;
 }
