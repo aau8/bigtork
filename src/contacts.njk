@@ -14,21 +14,40 @@
 		<div class="wrapper">
 			{% include "sections/header.njk" %}
 
-			<main class="main have-thumb have-breadcrumbs">
-				{{ breadcrumbs( [ 'Главная', 'Сервис' ] ) }}
+			<main class="main have-thumb have-breadcrumbs page-contacts">
+				{{ breadcrumbs( [ 'Главная', 'Контакты' ] ) }}
 				<div class="main__container">
 					<div class="main-info">
 						<div class="main__content">
-							<h1 class="title-1 main__title">Сервис <span>BIGTORK</span></h1>
-							<ul class="main__list">
-								<li class="main__list-item">Срок действия гарантии определяется заводом-изготовителем и начинается c момента перехода права собственности;</li>
-								<li class="main__list-item">Бесплатное устранение всех выявленных дефектов, возникших по вине производителя;</li>
-								<li class="main__list-item">Работы будут выполнены быстро и качественно с применением фирменных комплектующих.</li>
-							</ul>
+							<h1 class="title-1 main__title">Contact <span>Us</span></h1>
+							<div class="main-contact">
+								<div class="main-contact__block">
+									<span class="main-contact__block-title">Телефон:</span>
+									<div class="main-contact__block-list">
+										<a href="#" class="link main-contact__block-link">+7 993 823 283</a>
+										<a href="#" class="link main-contact__block-link">+7 993 823 283</a>
+									</div>
+								</div>
+								<div class="main-contact__block">
+									<span class="main-contact__block-title">Электронная почта:</span>
+									<div class="main-contact__block-list">
+										<a href="#" class="link main-contact__block-link">sales@bigtork.com3</a>
+										<a href="#" class="link main-contact__block-link">gmail@gmail.com</a>
+									</div>
+								</div>
+								<div class="main-contact__block">
+									<span class="main-contact__block-title">Адрес:</span>
+									<p class="main-contact__block-text">
+										998 Yuanqu Avenue, Anfeng Industrial Zone, Oubei, Yongjia, Zhejiang, China.
+									</p>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="main-thumb">
-						<div class="main-thumb__img"><img src="./assets/img/main/1.jpg" alt=""></div>
+						<div class="main-thumb__img">
+							<iframe src="https://yandex.ru/map-widget/v1/-/CCURyUv7CB" width="560" height="400" frameborder="1" allowfullscreen="true"></iframe>
+						</div>
 					</div>
 				</div>
 			</main>
