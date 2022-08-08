@@ -3,12 +3,16 @@
     "/prod/assets/css/style.css": "/prod/assets/css/style.css",
     "/prod/about.html": "/prod/about.html",
     "/prod/certificate.html": "/prod/certificate.html",
+    "/prod/contacts.html": "/prod/contacts.html",
+    "/prod/decisions.html": "/prod/decisions.html",
     "/prod/documentation.html": "/prod/documentation.html",
     "/prod/index.html": "/prod/index.html",
     "/prod/main.html": "/prod/main.html",
     "/prod/manuf.html": "/prod/manuf.html",
+    "/prod/product.html": "/prod/product.html",
     "/prod/products.html": "/prod/products.html",
     "/prod/quality.html": "/prod/quality.html",
+    "/prod/service.html": "/prod/service.html",
     "/prod/test.html": "/prod/test.html",
     "/prod/assets/img/case/1.jpg": "/prod/assets/img/case/1.jpg",
     "/prod/assets/img/case/2.jpg": "/prod/assets/img/case/2.jpg",
@@ -27,9 +31,5 @@
     "/prod/assets/img/products/2.jpg": "/prod/assets/img/products/2.jpg",
     "/prod/assets/img/products/3.jpg": "/prod/assets/img/products/3.jpg",
     "/prod/assets/img/products/4.jpg": "/prod/assets/img/products/4.jpg",
-    "/prod/assets/img/sprite.svg": "/prod/assets/img/sprite.svg",
-    "/prod/decisions.html": "/prod/decisions.html",
-    "/prod/service.html": "/prod/service.html",
-    "/prod/contacts.html": "/prod/contacts.html",
-    "/prod/product.html": "/prod/product.html"
+    "/prod/assets/img/sprite.svg": "/prod/assets/img/sprite.svg"
 }

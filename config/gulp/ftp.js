@@ -11,3 +11,5 @@ export default function ftp() {
 	return app.gulp.src(`${app.path.prodFolder}/**/*.*`, {})
 		.pipe(ftpConnect.dest(`/${app.path.ftp}`));
 }
+
+hi

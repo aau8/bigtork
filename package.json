@@ -6,9 +6,9 @@
 	"type": "module",
 	"scripts": {
 		"dev": "npx mix watch --mix-config=./config/laravel.mix.cjs",
-		"prod": "npx mix -p --mix-config=./config/laravel.mix.cjs",
+		"prod": "npx mix -p --mix-config=./config/laravel.mix.cjs && npm run html:prettier",
 		"sprite": "npx mix --mix-config=./config/sprite.mix.cjs",
-		"njk:format": "djlint --version",
+		"html:prettier": "npx prettier --write ./prod/**/*.html !./prod/index.html",
 		"deploy": "gulp ftp",
 		"deploy:prod": "npm run prod && gulp ftp",
 		"zip": "npm run prod && gulp zip"
@@ -17,12 +17,12 @@
 	"author": "",
 	"license": "ISC",
 	"browserslist": [
-	  "extends @wordpress/browserslist-config"
+		"extends @wordpress/browserslist-config"
 	],
 	"babel": {
-	  "presets": [
-		"@babel/preset-env"
-	  ]
+		"presets": [
+			"@babel/preset-env"
+		]
 	},
 	"devDependencies": {
 		"@wordpress/browserslist-config": "^4.1.2",
@@ -34,6 +34,7 @@
 		"filename-regex": "^2.0.1",
 		"gulp": "^4.0.2",
 		"gulp-zip": "^5.1.0",
+		"html-minifier": "^4.0.0",
 		"html-webpack-plugin": "^5.5.0",
 		"laravel-mix": "^6.0.49",
 		"laravel-mix-nunjucks": "^1.2.2",

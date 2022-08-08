@@ -10,6 +10,7 @@ const fs = require('fs')
 // const { BundleAnalyzerPlugin } = require( 'webpack-bundle-analyzer' )
 const manifestRemove = require('./utils/manifestRemove.cjs')
 const replaceMatches = require('./utils/replaceMatches.cjs')
+const htmlMinifier = require('./utils/htmlMinifier.cjs')
 
 const PROD_DIR = './prod'
 const SRC_DIR = './src'
@@ -25,15 +26,21 @@ mix.options({
 	processCssUrls: false
 })
 mix.after(() => {
-	replaceMatches({
-		path: `${PROD_DIR}/assets/css/style.css`,
-		replace: [
-			['@img', '../img']
-		]
-	})
+	// replaceMatches({
+	// 	path: [
+	// 		`${PROD_DIR}/assets/css/style.css`
+	// 	],
+	// 	replace: [
+	// 		['../img', '../assets/img']
+	// 	]
+	// })
 })
 
 mix.copy(`${SRC_DIR}/**/*.html`, './prod/')
+mix.after(() => {
+	// htmlMinifier()
+})
+
 mix.copy(`${SRC_DIR}/img/`, `${PROD_DIR}/assets/img/`)
 
 
