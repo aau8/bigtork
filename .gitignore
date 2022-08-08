@@ -1,6 +1,6 @@
 .vscode/
 node_modules/
-prod/
+prod/assets
 psd/
 package-lock.json
 convert-images/

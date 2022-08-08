@@ -10,7 +10,7 @@ global.app = {
 	gulp,
 	path: {
 		tasks: './config/gulp',
-		ftp: '',
+		ftp: './wp/wp-content/themes/BigTorkTheme',
 		prodFolder: './prod',
 		srcFolder: './src',
 		rootFolder: path.basename(path.resolve())
