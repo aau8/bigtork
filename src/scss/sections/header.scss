@@ -19,7 +19,30 @@
 
 .header__area {
 	position: relative;
+    width: 100%;
+    max-width: 2000px;
+	max-height: var(--header-height);
 	height: 100%;
+	background: $light;
+
+	&.is-fixed {
+		position: fixed;
+		max-height: 100px;
+		transition: transform $tr, background-color $tr;
+		box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+
+		&.is-show {
+			transform: translateY(100%);
+		}
+
+		&.is-fill {
+			background-color: $text-primary;
+		}
+
+		&.is-blur {
+			background-color: create-rgba($text-primary, .5);
+		}
+	}
 }
 
 .header__container {

@@ -30,8 +30,11 @@ import "./Menu.js"
 
 // Слайдеры
 import "./Sliders.js"
-// Увеличение изображения при клике по нему. У изображения должен быть атрибут data-zoom
 
+// Фиксация шапки
+import "./FixHeader.js"
+
+// Увеличение изображения при клике по нему. У изображения должен быть атрибут data-zoom
 zoomInImg()
 function zoomInImg() {
 	const TR = 300

@@ -15,6 +15,10 @@
 				padding-bottom: 64px;
 			}
 		}
+
+		@media (min-width: 2000px) {
+			min-height: auto;
+		}
 	}
 
 	&.page-contacts {
@@ -93,6 +97,10 @@
 
 		@media (max-width: $container-width + px) {
 			left: calc(var(--container-padding))
+		}
+
+		@media (min-width: 2000px) {
+			left: calc((2000px - var(--container-width)) / 2 + var(--container-padding));
 		}
 
 		@media (min-width: 951px) {
@@ -255,6 +263,7 @@
 
 // Слайдер
 .main-slider {
+	max-width: 1005px;
     width: calc((var(--container-width) / 2) + (100vw - var(--container-width)) / 2);
 	margin-right: calc((-100vw + var(--container-width)) / 2 - var(--container-padding));
 
