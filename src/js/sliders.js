@@ -83,19 +83,20 @@ for (let i = 0; i < photoSwiperElems.length; i++) {
 }
 
 const mainSwiper = new Swiper("[data-swiper=main]", {
-	modules: [EffectFade, Navigation, Pagination, Autoplay],
+	modules: [EffectFade, Pagination, Autoplay],
 
 	slidesPerView: 1,
 	effect: 'fade',
 	loop: true,
+	allowTouchMove: false,
 	autoplay: {
 		delay: 5000,
 	},
 
-	navigation: {
-		nextEl: ".s-product__arrow.is-next",
-		prevEl: ".s-product__arrow.is-prev",
-	},
+	pagination: {
+		el: '.main__slider-pagin',
+		type: 'fraction',
+	}
 });
 
 const productSecondSwiper = new Swiper("[data-swiper=product-second]", {

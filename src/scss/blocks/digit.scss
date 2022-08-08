@@ -13,4 +13,8 @@
 
 .b-digit__text {
 	margin-top: 12px;
+
+	@media (max-width: $mobile-l) {
+		margin-top: 6px;
+	}
 }

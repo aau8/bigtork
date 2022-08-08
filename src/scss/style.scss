@@ -89,11 +89,13 @@ body {
 
 .wrapper {
     position: relative;
+	max-width: 2000px;
     width: 100%;
     min-height: 100%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
+	margin: 0 auto;
 
     & > .content {
         flex: 1 0 auto;
